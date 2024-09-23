@@ -57,15 +57,21 @@ function App() {
 
   return (
     <>
-      <div className="min-w-screen min-h-screen bg-slate-500 flex justify-center ">
+      <div className=" min-w-screen min-h-screen p-6 bg-slate-500 flex justify-center">
         <div className="w-[500px] space-y-4">
           <Title>Minhas listas</Title>
           <AddTask onAddTaskSubmit={onAddTaskSubmit} />
-          <Tasks
-            tasks={tasks}
-            onTaskClick={onTaskClick}
-            onDeleteTaskClick={onDeleteTaskClick}
-          />
+          {tasks.length === 0 ? (
+            <div className="space-y-4 p-6 bg-slate-200 rounded-md shadow">
+              Não há tarefas cadastradas!
+            </div>
+          ) : (
+            <Tasks
+              tasks={tasks}
+              onTaskClick={onTaskClick}
+              onDeleteTaskClick={onDeleteTaskClick}
+            />
+          )}
         </div>
       </div>
     </>
