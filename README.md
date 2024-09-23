@@ -1,4 +1,6 @@
-![React Logo](https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg)
+<p align="center">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="React Logo" width="100" height="100">
+</p>
 
 # TO-DO List ReactJs
 
@@ -54,10 +56,12 @@ Se você deseja contribuir para este projeto, siga os passos abaixo:
    ```
 3. Faça as alterações necessárias no código.
 4. Faça commit das suas alterações:
+
    ```bash
    git commit -m "Descrição das alterações"
 
    ```
+
 5. Envie suas alterações para o seu fork:
 
    ```bash
